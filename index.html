@@ -14,14 +14,18 @@
             height: 100vh;
             margin: 0;
         }
+
+        /* Style for the container div with background color */
+        .iframe-container {
+            background-color: #E3F6EB;
+        }
     </style>
 </head>
 <body>
-    <div>
-        <h1>ExIm dashboard</h1>
-        <!-- Set the width, height, and background color of the iframe -->
-        <iframe title="Report Section" width="1480" height="1980" src="<Powerbi embed link>" frameborder="0" allowFullScreen="true" 
-            style="display: block; margin: 0 auto; background-color: #E3F6EB;"></iframe>
+    <!-- Set the width and height of the container div -->
+    <div class="iframe-container" style="width: 1480px; height: 1980px;">
+        <!-- Set the width and height of the iframe within the container -->
+        <iframe title="Report Section" width="100%" height="100%" src="<Powerbi embed link>" frameborder="0" allowFullScreen="true"></iframe>
     </div>
 </body>
 </html>
