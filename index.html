@@ -19,14 +19,20 @@
         .iframe-container {
             background-color: #E3F6EB;
         }
+
+        /* Set the width and height of the container div */
+        .iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove iframe border if any */
+        }
     </style>
 </head>
 <body>
-    <!-- Set the width and height of the container div -->
-    <div class="iframe-container" style="width: 1480px; height: 1980px;">
-        <!-- Set the width and height of the iframe within the container -->
-        <!--<iframe title="Report Section" width="100%" height="100%" src="" frameborder="0" allowFullScreen="true"></iframe>-->
-        <iframe title="Products_merged_hosting_revisited" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=f4bff59d-19d0-4ace-aa31-53325c8a3e37&autoAuth=true&ctid=88c8cbfe-6092-44d0-b408-ac2987d55165" frameborder="0" allowFullScreen="true"></iframe>
+    <!-- Embed the Power BI report within an iframe -->
+    <div class="iframe-container">
+        <iframe title="Power BI Report" src="https://app.powerbi.com/reportEmbed?reportId=f4bff59d-19d0-4ace-aa31-53325c8a3e37&autoAuth=true&ctid=88c8cbfe-6092-44d0-b408-ac2987d55165" allowfullscreen></iframe>
     </div>
 </body>
 </html>
+
